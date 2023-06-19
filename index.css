@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+    list-style-type: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+#first{
+    display: flex;
+    flex-direction: column;
+}
+
+#first .title{
+    margin-bottom: 2rem;
+}
+
+
+#first .text h1{
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+    font-size: 45px;
+}
+
+#first .text h1 span{
+    color: hsl(209, 33%, 12%);
+    font-weight: 900;
+    font-size: 2.7rem;
+}
+
+#first .text p{
+    margin-top: 1rem;
+    color: hsl(209, 33%, 12%);
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+#first form{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#first form #email{
+    text-align: left;
+    width: 400px;
+    border: 1px solid hsl(223, 100%, 88%);
+    color: black;
+}
+
+#first form #email:hover{
+    color: hsl(223, 100%, 88%);
+}
+
+#first form #submit{
+    width: 150px;
+    cursor: pointer;
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    box-shadow: 0 5px 5px hsl(223, 100%, 88%);
+}
+
+#first form input{
+    padding: 1rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 30px;
+}
+
+input[type=email]:focus{
+    outline: none;
+}
+
+/* .error{
+    font-size: .8rem;
+    color: hsl(354, 100%, 66%);
+    font-style:italic ;
+    text-align: left;
+    display: none;
+} */
+
+#second{
+    display: flex;
+    flex-direction: column;
+}
+
+#second .image img{
+    width: 100%;
+    height: auto;
+}
+
+#second .socialmedia ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#second .socialmedia ul li{
+    padding: 0 1rem;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#second .socialmedia ul li a{
+    color: hsl(223, 87%, 63%);
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 18px;
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#second .footer p{
+    margin-top: 1.2rem;
+    color: hsl(0, 0%, 59%);
+}
+
+#second .socialmedia ul li a:hover{
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+}
+
+@media only screen and (max-width:580px){
+
+    #first form{
+        flex-direction: column;
+    }
+
+    #first form input{
+        margin: 0.5rem 0;
+    }
+
+    #first form #submit{
+        width: 400px;
+    }
+
+    #second .socialmedia{
+        margin-top: 6rem;
+    }
+
+
+}
